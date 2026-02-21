@@ -1,14 +1,6 @@
 import java.util.*;
 public class Solution2 {
     // Problem 2 — Chocolates Pickup
-    // dp[row][col1][col2] stores the maximum chocolates collected when robot1 is at col1
-    // and robot2 is at col2 in the current row.
-    // For each position both robots can move in 3 directions so we try all combinations
-    // and take the maximum chocolates possible.
-    // If both robots land on same cell. count chocolates only once,
-    // otherwise count chocolates from both cells.
-    // Start from row 0 with robot1 at col 0 and robot2 at col m-1,
-    // and the final answer will be the maximum chocolates collected.
     static int[][][] dp;
     static int n,m;
     public static int maximumChocolates(int[][] grid){
