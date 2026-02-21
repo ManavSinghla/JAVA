@@ -15,7 +15,7 @@ class Car{
 }
 public class StaticExample {
     public static void main(String[] args) {
-        Car c=new Car();
-        Car c1=new Car();
+        // Car c=new Car();
+        // Car c1=new Car();
     }   
 }
