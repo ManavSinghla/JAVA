@@ -48,4 +48,18 @@ public class Solution2 {
         }
         return dp[row][col1][col2] = max;
     }
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int m=s.nextInt();
+        int[][] grid=new int[n][m];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                grid[i][j]=s.nextInt();
+            }
+        }
+        System.out.println(maximumChocolates(grid));
+        s.close();
+    }
 }
